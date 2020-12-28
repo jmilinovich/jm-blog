@@ -1,0 +1,280 @@
+
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: local('Inter'), local('Inter'),
+         url('/fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/Inter-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/Inter-Regular.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/Inter-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/Inter-Regular.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-display: block;
+    src: local('Inter'), local('Inter'),
+         url('/fonts/Inter-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/Inter-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/Inter-Italic.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/Inter-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/Inter-Italic.svg#Inter') format('svg'); /* Legacy iOS */
+  }  
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-display: block;
+    src: local('Inter'), local('Inter'),
+         url('/fonts/Inter-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/Inter-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/Inter-Bold.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/Inter-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/Inter-Bold.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 600;
+    font-display: block;
+    src: local('Inter'), local('Inter'),
+         url('/fonts/Inter-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/Inter-BoldItalic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/Inter-BoldItalic.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/Inter-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/Inter-BoldItalic.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+
+// Aesthetic Color Palette
+$black: #111111;
+$green: #19d260;
+$red: #da3721;
+$yellow: #ece23c;
+$blue: #0639f2;
+$gray: #929292;
+$gray-600: #929292;
+$white: #ffffff;
+
+// Other Colors
+$purple: #da21d2;
+$orange: #f2b006;
+$turquoise: #06c8f2;
+
+$text-white: rgba(255, 255, 255, 0.8);
+$text-light-white: rgba(255, 255, 255, 0.6);
+$text-black: rgba(0, 0, 0, 0.75);
+$text-light-black: rgba(0, 0, 0, 0.6);
+$text-extra-light-black: rgba(0, 0, 0, 0.45);
+
+$border-color-light: #d9d9d9;
+
+$gray-bg: #f8f8f8;
+$dark: #434343;
+
+
+html,
+body {
+  height: 100%;
+  max-width: 100%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  color: $black;
+}
+
+
+.aesthetic-logomark {
+    height: 46px;
+    border-radius:2px;
+}
+
+.aesthetic-logomark-footer {
+  max-width: 140px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    line-height: 1.25;
+}
+
+
+.container {
+  /* max-width: 800px; */
+}
+
+.footer-wrap {
+  width:100%;
+}
+
+
+.btn-black, .btn-black.focus, .btn-black:focus, .btn-black:hover {
+  color: #fff !important;
+  background-color: #000;
+  border-color: #000;
+}
+
+.nav-link {
+  padding: .5rem 1rem !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  color:$black !important;
+}
+
+
+
+.btn.nav-link {
+  padding: 10px 12px !important;
+  font-size: 16px;
+  color:white !Important;
+  text-decoration: none;
+  margin-left:1rem !important;
+}
+
+
+.header-pipe {
+  color:rgb(217, 217, 217) !Important;
+  text-decoration: none;
+  cursor:default;
+}
+
+.twitter {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  border:1px solid $black;
+  padding:12px;
+  border-radius: 2px;
+}
+
+.blog-arrow {
+  transition: transform 0.2s;
+  transform: translateZ(0);
+}
+
+.postcard {
+    border:1px solid #e0e0e0;
+    display: inline-block;
+    position: relative;
+    // width: 355px;
+    // background-color: white;
+    vertical-align: top;
+    text-align: left;
+    // height: 490px;
+    // margin: 20px;
+    border-radius: 3px;
+    margin-bottom:24px;
+    padding:24px 24px;
+    // box-shadow: 0 20px 20px rgba(0,0,0,.08);
+    white-space: normal;
+    // -webkit-transition: box-shadow 200ms cubic-bezier(.02, .01, .47, 1), transform 200ms cubic-bezier(.02, .01, .47, 1);
+    // -moz-transition: box-shadow 200ms cubic-bezier(.02, .01, .47, 1), transform 200ms cubic-bezier(.02, .01, .47, 1);
+    transition: box-shadow 200ms cubic-bezier(.02, .01, .47, 1), transform 200ms cubic-bezier(.02, .01, .47, 1);
+    // color: #4B4F56;
+    // padding-bottom: 48px;
+  &:hover {
+    box-shadow: 0 40px 40px rgba(0,0,0,.16);
+    transform: translate(0,-10px);
+    transition-delay: 0s !important;
+    border-color: transparent;
+    .blog-arrow {
+      // transform: translateX(-3px);
+      // color:$green;
+    }
+  }
+  &:active {
+    .blog-arrow {
+      // transform: translate(1px);
+    }
+  }
+}
+
+
+// ///////////////////   MOBILE
+
+@media (max-width: 768px) {
+  .cursor-icon {
+    // display:none;
+    right:157px;
+  }
+  .folder-icon {
+    // display: none;
+    bottom:190px;
+  }
+
+  .navbar {
+    padding:0;
+  }
+
+  .blog-header-wrap {
+    margin-bottom:24px;
+  }
+
+  .postcard {
+    padding:16px 16px;
+  }
+
+  .container {
+    // padding-right:16px;
+    // padding-left: 16px;
+  }
+
+  .card-title {
+    font-size: 24px !important;
+  }
+  .card-subtitle {
+    font-size: 18px !important;
+  }
+  .blog-wrap {
+    margin-bottom:72px !important;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .cursor-icon {
+    right:57px;
+  }
+  .folder-icon {
+    bottom:320px;
+  }
+
+  .post-title {
+    font-size: 46px !important;
+  }
+
+  .post-subtitle {
+    font-size:26px !important;
+  }
+
+  .post-author-photo {
+    width:52px !important;
+    height:52px !important;
+  }
+  
+  .post-author-data {
+    span {
+      font-size: 15px !important;
+    }
+  }
+
+  .devii-markdown p,
+  .devii-markdown li {
+    font-size:20px !important;
+  }
+
+  .post-header-wrap {
+    margin-bottom: 20px !important;
+  }
+
+}
